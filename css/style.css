@@ -213,6 +213,11 @@ a {
   white-space: nowrap;
 }
 
+.btn--stretched {
+  padding-left: 6rem;
+  padding-right: 6rem;
+}
+
 .btn--primary {
   background-color: var(--color-primary);
   color: #fff;
@@ -512,5 +517,45 @@ a {
   }
   .testimonial__image-container {
     margin: 0;
+  }
+}
+
+/* Callouts */
+.callout {
+  padding: 3rem;
+  border-radius: 10px;
+}
+
+.callout__heading {
+  color: #fff;
+  margin-top: 0;
+}
+
+.callout--primary {
+  background: var(--color-primary);
+  color: #fff;
+}
+
+.callout .btn {
+  justify-self: center;
+  align-self: center;
+  margin: 0 2rem;
+}
+
+.callout__content {
+  text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+  .callout__content {
+    text-align: left;
+  }
+
+  .callout .grid--1X2 {
+    grid-template-columns: 1fr auto;
+  }
+
+  .callout .btn {
+    justify-self: start;
   }
 }
