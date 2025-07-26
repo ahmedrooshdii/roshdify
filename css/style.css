@@ -214,7 +214,7 @@ a {
   font-size: 1.8rem;
   font-weight: 600;
   margin: 1rem 0;
-  padding: 2rem 3rem;
+  padding: 2rem 3vw;
   text-align: center;
   text-transform: uppercase;
   white-space: nowrap;
@@ -299,6 +299,7 @@ a {
   border: 0;
   flex-grow: 1;
   padding: 1.5rem 2rem;
+  width: 0;
 }
 
 .input-group .btn {
@@ -444,7 +445,7 @@ a {
 
 /* Quotes */
 .qoute__text {
-  font-size: 3rem;
+  font-size: 2.1rem;
   color: var(--color-body-darker);
   font-style: italic;
   line-height: 1.3;
@@ -619,6 +620,12 @@ a {
   opacity: 1;
 }
 
+@media screen and (min-width: 768px) {
+  .collapsible__content {
+    font-size: 1.8rem;
+  }
+}
+
 /* Blocks */
 .block {
   --padding-bottom: 6rem;
@@ -712,6 +719,9 @@ a {
     max-height: 100%;
     opacity: 1;
   }
+  .nav__item {
+    border-bottom: 0;
+  }
 }
 
 /* Hero */
@@ -762,8 +772,9 @@ a {
 }
 
 .block-domain__prices {
+  color: var(--color-headings);
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(2, 6rem);
   font-size: 2rem;
   font-weight: 600;
@@ -841,6 +852,7 @@ a {
   }
 }
 
+/* Footer */
 .footer {
   background-color: #232323;
 }
